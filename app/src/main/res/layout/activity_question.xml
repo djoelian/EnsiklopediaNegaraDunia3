@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.gusty.ensiklopedianegaradunia3.Question.QuestionActivity"
+    android:orientation="horizontal">
+
+
+    <Button
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#20B2AA"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:background="#20B2AA"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="21dp"
+            android:layout_above="@+id/answer4"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:background="#20B2AA"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_above="@+id/answer3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:background="#20B2AA"
+            android:text="Button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bgtext"
+        android:layout_above="@+id/answer1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_marginTop="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gusty.ensiklopedianegaradunia3.LoginRegister.Login2ctivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/icon_signup" />
+
+        <EditText
+            android:id="@+id/textInputEditTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/imageView5"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/textInputEditTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textInputEditTextEmail"
+            android:layout_alignStart="@+id/textInputEditTextEmail"
+            android:layout_below="@+id/textInputEditTextEmail"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/appCompatButtonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textInputEditTextPassword"
+            android:layout_alignStart="@+id/imageView17"
+            android:layout_below="@+id/textInputEditTextPassword"
+            android:layout_marginTop="41dp"
+            android:background="#20B2AA"
+            android:onClick="onClickS"
+            android:text="Sign IN"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/textInputEditTextPassword"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            app:srcCompat="@drawable/contact" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/appCompatButtonLogin"
+            android:layout_alignStart="@+id/imageView16"
+            app:srcCompat="@drawable/locked" />
+
+        <TextView
+            android:id="@+id/textViewLinkRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/appCompatButtonLogin"
+            android:layout_alignStart="@+id/appCompatButtonLogin"
+            android:layout_below="@+id/appCompatButtonLogin"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:onClick="registerdrsi"
+            android:text="Belum terdaftar? silahkan registrasi" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
